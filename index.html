@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <title>M3</title> -->
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+  <div class="age-gate" id="ageGate">
+
+
+    <!-- This is for Site consent before entering the screen  -->
+  <div class="age-card">
+    <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="CallMe Logo">
+    </a>
+
+    <div class="age-label">Mumbai Meera Milf</div>
+
+    <h2>Adults only</h2>
+
+    <p>
+      This website is intended for adults aged 18 or older.
+      By entering, you confirm that you are at least 18 years old.
+    </p>
+
+    <div class="age-actions">
+
+      <button id="enterSite">
+        I am 18 or older
+      </button>
+
+      <button
+        class="leave"
+        onclick="history.back()">
+        Leave
+      </button>
+
+    </div>
+
+    <small>
+      Please review the site's legal and privacy information before continuing.
+    </small>
+
+  </div>
+
+</div>
+
+
+<header>
+  <div class="bar">
+
+    <!-- Site logo change below -->
+
+    <a href="#home" class="brand">
+  <img src="assets/logo.png" alt="CallMe Logo">
+</a>
+
+    <button
+      id="menu-btn"
+      aria-expanded="false"
+      aria-controls="nav">
+      Menu
+    </button>
+
+    
+
+    <!-- Navbar menu  -->
+    <nav id="nav" aria-label="Main">
+      
+      <ul>
+<li class="dropdown">
+  <a href="javascript:void(0)" class="dropdown-toggle">
+    Profiles <span>⌄</span>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a href="#" onclick="selectProfile('All'); return false;">All Profiles</a></li>
+    <li><a href="#" onclick="selectProfile('Companion'); return false;">Companion</a></li>
+    <li><a href="#" onclick="selectProfile('Escorts'); return false;">Escorts</a></li>
+    <li><a href="#" onclick="selectProfile('Call Girls'); return false;">Call Girls</a></li>
+  </ul>
+</li>        <li><a href="#about">About</a></li>
+        <li><a href="#security">Safety</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#support">Support</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="dropdown">
+  <a href="javascript:void(0)" class="dropdown-toggle">
+    Locations <span>⌄</span>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a href="#" onclick="selectLocation('All'); return false;">All Locations</a></li>
+    <li><a href="#" onclick="selectLocation('South Bombay'); return false;">South Bombay</a></li>
+    <li><a href="#" onclick="selectLocation('nasik'); return false;">nasik</a></li>
+    <li><a href="#" onclick="selectLocation('dharavi'); return false;">dharavi</a></li>
+    <li><a href="#" onclick="selectLocation('Colba'); return false;">Colba</a></li>
+    <li><a href="#" onclick="selectLocation('Dadar'); return false;">Dadar</a></li>
+  </ul>
+</li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+  <!-- 1. HOME: -->
+ <section class="page" id="home">
+
+  <div class="hero">
+
+    <div class="hero-copy">
+      <span class="eyebrow">Mumbai Meera Milfs</span>
+
+      <h1>Get Premium Escorts<br> with Verified profiles</h1>
+
+      <p class="lead">
+        Find Premium Escorts and Party Girls for Fun.
+      </p>
+
+      <div class="trust-row">
+        <span>18+ only</span>
+        <span>Private browsing</span>
+        <span>Respectful community</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="directory-tools">
+
+    <div class="search-wrap">
+      <span class="search-icon">⌕</span>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search profiles or locations..."
+        autocomplete="off"
+      >
+    </div>
+
+    <div class="filter-heading">
+      <span>Browse by location</span>
+      <span id="count"></span>
+    </div>
+
+    <div
+      class="filters"
+      id="filters"
+      role="group"
+      aria-label="Filter by place">
+    </div>
+
+  </div>
+
+  <div class="grid" id="tiles"></div>
+
+</section>
+
+  <!-- 2. ABOUT -->
+  <section class="page" id="about"><div class="box">
+    <h1>About us</h1>
+    <p>Tell visitors who you are, what you do and why it matters.</p>
+    <p>Add your story, team and mission here.</p>
+  </div></section>
+
+  <!-- 3. BLOG -->
+  <section class="page" id="blog">
+    <h1>Blog</h1>
+    <p class="lead">News and updates.</p>
+    <div class="grid">
+      <article class="tile"><img src="https://picsum.photos/seed/b1/600/450" alt="" loading="lazy"><div><h3>First post</h3><p>Summary of the post.</p></div></article>
+      <article class="tile"><img src="https://picsum.photos/seed/b2/600/450" alt="" loading="lazy"><div><h3>Second post</h3><p>Summary of the post.</p></div></article>
+      <article class="tile"><img src="https://picsum.photos/seed/b3/600/450" alt="" loading="lazy"><div><h3>Third post</h3><p>Summary of the post.</p></div></article>
+    </div>
+  </section>
+
+  <!-- 4. LEGAL -->
+  <section class="page" id="legal"><div class="box">
+    <h1>Legal</h1>
+    <p>Terms of use, privacy policy and other legal notices go here.</p>
+    <ul><li><a href="#">Terms and conditions</a></li><li><a href="#">Privacy policy</a></li><li><a href="#">Cookie policy</a></li></ul>
+  </div></section>
+
+  <!-- 5. SUPPORT -->
+  <section class="page" id="support"><div class="box">
+    <h1>Support</h1>
+    <p>Need help? Check the <a href="#faq">FAQ</a> first, or <a href="#contact">contact us</a>.</p>
+    <p>Support hours: Mon–Fri, 9:00–18:00.</p>
+  </div></section>
+
+  <!-- 6. SECURITY -->
+  <section class="page" id="security"><div class="box">
+    <h1>Security</h1>
+    <p>Explain how you protect user data: encryption, access controls, audits.</p>
+    <p>To report a vulnerability, write to security@example.com.</p>
+  </div></section>
+
+  <!-- 7. FAQ -->
+  <section class="page" id="faq"><div class="box">
+    <h1>FAQ</h1>
+    <details><summary>Question one?</summary><p>Answer one.</p></details>
+    <details><summary>Question two?</summary><p>Answer two.</p></details>
+    <details><summary>Question three?</summary><p>Answer three.</p></details>
+  </div></section>
+
+  <!-- 8. CONTACT -->
+  <section class="page" id="contact">
+    <h1>Contact</h1>
+    <p class="lead">Send us a message and we will reply by email.</p>
+    <form onsubmit="event.preventDefault();alert('Connect this form to your backend.')">
+      <label>Name<input required></label>
+      <label>Email<input type="email" required></label>
+      <label>Message<textarea rows="5" required></textarea></label>
+      <button>Send message</button>
+    </form>
+  </section>
+
+  <!-- 9. COMPLAINTS -->
+  <section class="page" id="complaints">
+    <h1>Complaints</h1>
+    <p class="lead">Tell us what went wrong. We will acknowledge your complaint and update you on the outcome.</p>
+    <form onsubmit="event.preventDefault();alert('Connect this form to your backend.')">
+      <label>Name<input required></label>
+      <label>Email<input type="email" required></label>
+      <label>Reference number (optional)<input></label>
+      <label>Describe your complaint<textarea rows="5" required></textarea></label>
+      <button>Submit complaint</button>
+    </form>
+  </section>
+
+  <!-- 10. LOCATION -->
+  <section class="page" id="location"><div class="box">
+    <h1>Location</h1>
+    <p>123 Sample Street, Bengaluru, Karnataka</p>
+    <p>Open Mon–Fri, 9:00–18:00.</p>
+    <!-- Replace the src with the embed link from Google,  to navigate follow -> Maps > Share > Embed a map -->
+    <iframe title="Map" loading="lazy" src="https://www.google.com/maps?q=Bengaluru&output=embed"></iframe>
+  </div></section>
+
+</main>
+
+<footer>
+
+  <div>
+    <a href="#legal">Legal</a>
+    ·
+    <a href="#security">Privacy & Security</a>
+    ·
+    <a href="#complaints">Report a concern</a>
+    ·
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div style="margin-top:10px;">
+    © 2026 M3. All rights reserved.
+  </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
